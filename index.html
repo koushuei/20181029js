@@ -11,11 +11,12 @@
     <h1>dachiahao</h1>
     <h2>woshiKoushei</h2>
     <input type="text" name="test" id='tt'/>
+    <input type='button' id=snet/>
 </body>
     <script>
         var a=document.getElementById('tt').value();
-        document.getElementById('tt').addEventListener('click',function(){
-            document.cookie='input='a;
+        document.getElementById('sent').addEventListener('click',function(){
+            document.cookie='input='+a;
             const b=getCookie('input');
             alert(b);
             
