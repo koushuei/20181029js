@@ -10,5 +10,24 @@
 <body>
     <h1>dachiahao</h1>
     <h2>woshiKoushei</h2>
+    <input type="text" name="test" id='tt'/>
 </body>
+    <script>
+        var a=document.getElementById('tt').value();
+        document.getElementById('tt').addEventListener('click',function(){
+            document.cookie='input='a;
+            const b=getCookie('input');
+            alert(b);
+            
+        })
+        function getCookie(name) {
+    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+    if (arr = document.cookie.match(reg))
+
+        return unescape(arr[2]);
+    else
+        return null;
+} 
+    </script>
 </html>
